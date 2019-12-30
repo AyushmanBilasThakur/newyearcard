@@ -43,8 +43,7 @@ form.addEventListener("submit", e => {
   )}&from=${encodeURIComponent(fromInput.value)}&message=${encodeURIComponent(
     message.value
   )}`;
-  console.log(queryString);
-  generatedLinkBox.innerText = document.location + queryString;
+  generatedLinkBox.innerText = baseURL + queryString;
   generatedLinkBox.setAttribute("href", generatedLinkBox.innerText);
   linkbox.classList.remove("not-show");
 });
@@ -60,7 +59,6 @@ let copyLink = () => {
 };
 
 let clearLink = () => {
-  console.log("Here");
   toInput.value = "";
   fromInput.value = "";
   message.value = "";
