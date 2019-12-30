@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Snowburst+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.767);
+    background-image: url('winter_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.card {
+    width: 90vw;
+    text-align: center;
+    padding: 20px 20px;
+    color: white;
+}
+
+.card h1 {
+    font-size: 3rem;
+    color: #ff7b00;
+    margin-bottom: 40px;
+    font-family: 'Snowburst One', cursive;
+    ;
+}
+
+#to,
+#from {
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #b3aeae;
+}
+
+#to {
+    margin-bottom: 20px;
+
+}
+
+#msg {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#card>button {
+    margin: 20px auto;
+    ;
+}
+
+.not-show {
+    display: none;
+}
+
+
+input,
+textarea,
+button {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    border: 2px solid #777;
+}
+
+input[readonly] {
+    background-color: #acacac;
+    color: #222;
+}
+
+input[type="submit"],
+button {
+    background-color: springgreen;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    cursor: pointer;
+    background-color: #005f30;
+    color: white;
+}
+
+.control {
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+}
+
+button {
+    margin: 20px 10px;
+}
+
+a {
+    color: yellow;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #fff;
+}

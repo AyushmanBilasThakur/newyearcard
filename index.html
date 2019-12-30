@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Year Wishing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="card not-show" id="card">
+            <h1>Happy New Year 2020</h1>
+            <p id="to">To, John Doe</p>
+            <p id="msg">Hope this year goes fine for you</p>
+            <p id="from">From, Ayushman</p>
+            <button onclick="makeLink()">Create your own</button>
+        </section>
+        <section class="card" id="formContainer">
+            <h1>Get Your Personalized Card</h1>
+            <form id="form">
+                <input placeholder="To" type="text" id="toInput" required>
+                <input placeholder="From" type="text" id="fromInput" required>
+                <textarea placeholder="What do you want to tell?(optional)" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Create My link">
+            </form>
+            <div id="linkbox" class="not-show">
+                <h3>The created Link: </h3>
+                <br>
+                <a id="link" href="#" target="blank">
+                    http://127.0.0.1:5500/?to=Patric%20Sans&from=Ayushman%20BT&message=Hey%20O%20Happy%20New%20Year
+                </a>
+                <div class="control">
+                    <button onclick="copyLink()">Copy</button>
+                    <button onclick="clearLink()">Clear Link</button>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
